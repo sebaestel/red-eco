@@ -1,5 +1,5 @@
 import Image from "next/image";
-import foto from "@/imagenes/patio-huerto-escolar.jpg";
+import foto from "@/imagenes/mesa-clasificacion-patio.jpg";
 import { hero } from "@/lib/contenido";
 
 export default function Hero() {
@@ -8,15 +8,14 @@ export default function Hero() {
       <Image
         className="hero__foto"
         src={foto}
-        alt="Estudiantes y un docente plantando almácigos en el huerto del patio de su escuela"
+        alt="Estudiantes con guantes clasifican botellas PET, cartón, vidrio y metales en una mesa de acopio del patio, mientras un docente registra los materiales en una planilla"
         fill
         priority
         sizes="100vw"
-        quality={82}
         placeholder="blur"
       />
-      {/* El velo garantiza el contraste del texto sin apagar la foto entera:
-          carga la esquina inferior izquierda y deja limpio el lado derecho. */}
+      {/* El velo es diagonal, no una banda inferior: carga el lado izquierdo,
+          donde va el texto, y deja legible la mesa de acopio de la derecha. */}
       <div className="hero__velo" aria-hidden="true" />
 
       <div className="envoltura hero__contenido">
@@ -41,8 +40,6 @@ export default function Hero() {
           </a>
         </div>
       </div>
-
-      <p className="hero__pie">{hero.pieFoto}</p>
     </section>
   );
 }

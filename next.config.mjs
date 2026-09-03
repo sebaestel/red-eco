@@ -3,6 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   compress: true,
+  images: {
+    // Next 16 exigirá declarar las calidades usadas.
+    qualities: [82],
+    formats: ["image/avif", "image/webp"],
+  },
   // El sitio es estático salvo /api/contacto, así que las cabeceras se fijan acá.
   async headers() {
     return [

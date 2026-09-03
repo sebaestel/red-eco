@@ -6,13 +6,11 @@
 export const hero = {
   eyebrow: "Educación ambiental · Economía circular · Chile",
   titulo: ["Los residuos no son basura.", "Son material de aprendizaje."],
-  // La bajada habla de lo que se ve en la foto: la tierra del huerto viene
-  // de los residuos orgánicos del propio establecimiento.
+  // La bajada describe lo que se ve en la foto: clasificar, registrar, medir.
   bajada:
-    "La tierra de ese huerto fue, hace unos meses, el almuerzo que sobró. Así se ve la economía circular cuando una escuela la aprende: reciclaje, compostaje, infraestructura, formación y resultados medidos.",
+    "Primero se clasifica, después se pesa, y recién entonces se puede demostrar el cambio. RED ECO instala ese sistema completo en establecimientos educacionales de Chile.",
   ctaPrimario: { etiqueta: "Conocer EcoEscuela", href: "#programa" },
   ctaSecundario: { etiqueta: "Hablar con el equipo", href: "#contacto" },
-  pieFoto: "Programa EcoEscuela · compostaje y huerto escolar",
 };
 
 /**

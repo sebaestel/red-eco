@@ -290,8 +290,11 @@ a {
 /* ---------- 7. Barra de navegación ---------- */
 
 .nav {
-  position: sticky;
+  /* Fija, no sticky: el hero debe empezar detrás de la barra, no debajo. */
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 50;
   background-color: var(--papel);
   border-bottom: 1px solid var(--linea);
@@ -556,20 +559,19 @@ a {
   inset: 0;
   z-index: 1;
   background-image:
+    /* Velo principal, en diagonal: oscurece el lado del texto y libera la mesa. */
     linear-gradient(
-      to top,
-      rgba(16, 35, 26, 0.93) 0%,
-      rgba(16, 35, 26, 0.72) 26%,
-      rgba(16, 35, 26, 0.22) 58%,
-      rgba(16, 35, 26, 0.1) 100%
+      100deg,
+      rgba(16, 35, 26, 0.95) 0%,
+      rgba(16, 35, 26, 0.86) 28%,
+      rgba(16, 35, 26, 0.46) 54%,
+      rgba(16, 35, 26, 0.08) 76%,
+      rgba(16, 35, 26, 0) 90%
     ),
-    linear-gradient(
-      to right,
-      rgba(16, 35, 26, 0.7) 0%,
-      rgba(16, 35, 26, 0.42) 38%,
-      rgba(16, 35, 26, 0) 72%
-    ),
-    linear-gradient(to bottom, rgba(16, 35, 26, 0.55) 0%, rgba(16, 35, 26, 0) 22%);
+    /* Para la barra de navegación. */
+    linear-gradient(to bottom, rgba(16, 35, 26, 0.5) 0%, rgba(16, 35, 26, 0) 20%),
+    /* Cierre inferior suave, para el pie de foto. */
+    linear-gradient(to top, rgba(16, 35, 26, 0.42) 0%, rgba(16, 35, 26, 0) 28%);
 }
 
 .hero__contenido {
@@ -611,35 +613,6 @@ a {
   flex-wrap: wrap;
   gap: 0.75rem;
   margin-top: 2.1rem;
-}
-
-/* Pie de foto: el mismo recurso de rótulo en monoespaciado del resto del sitio. */
-.hero__pie {
-  position: absolute;
-  z-index: 2;
-  right: var(--gutter);
-  bottom: 1.5rem;
-  display: none;
-  align-items: center;
-  gap: 0.6rem;
-  font-family: var(--f-dato);
-  font-size: 0.625rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: rgba(244, 243, 234, 0.72);
-}
-
-.hero__pie::before {
-  content: "";
-  width: 1.5rem;
-  height: 1px;
-  background-color: var(--greda);
-}
-
-@media (min-width: 48rem) {
-  .hero__pie {
-    display: flex;
-  }
 }
 
 @media (min-width: 62rem) {
