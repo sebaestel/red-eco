@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 200" width="620" height="200">
+  <title>RED ECO — versión de una tinta para fondos oscuros</title>
+  <g fill="#f4f3ea" stroke="#f4f3ea">
+    <g>
+      <path d="M34.75 69.57 A 72 72 0 0 1 125.80 32.78" fill="none" stroke-width="13"/>
+      <path d="M129.75 22.51 L145.31 44.05 L121.86 43.05 Z" stroke="none"/>
+    </g>
+    <g transform="rotate(120 100 100)">
+      <path d="M34.75 69.57 A 72 72 0 0 1 125.80 32.78" fill="none" stroke-width="13"/>
+      <path d="M129.75 22.51 L145.31 44.05 L121.86 43.05 Z" stroke="none"/>
+    </g>
+    <g transform="rotate(240 100 100)">
+      <path d="M34.75 69.57 A 72 72 0 0 1 125.80 32.78" fill="none" stroke-width="13"/>
+      <path d="M129.75 22.51 L145.31 44.05 L121.86 43.05 Z" stroke="none"/>
+    </g>
+    <path d="M100 116 C88 108, 74 103, 60 101 L60 118 C74 120, 88 124, 100 130 Z" stroke="none"/>
+    <path d="M100 116 C112 108, 126 103, 140 101 L140 118 C126 120, 112 124, 100 130 Z" stroke="none"/>
+    <path d="M100 98 C88 98, 80 90, 79 80 C90 79, 99 87, 100 98 Z" stroke="none"/>
+    <path d="M100 89 C112 89, 120 81, 121 71 C110 70, 101 78, 100 89 Z" stroke="none"/>
+    <path d="M100 74 C94 66, 94 56, 100 49 C106 56, 106 66, 100 74 Z" stroke="none"/>
+  </g>
+  <path d="M100 116 C100 102, 100 88, 100 62" fill="none" stroke="#f4f3ea" stroke-width="5.5" stroke-linecap="round"/>
+  <rect x="212" y="52" width="1.6" height="96" fill="#c1976a"/>
+  <text x="248" y="106" font-family="Literata, Georgia, 'Times New Roman', serif"
+        font-size="76" font-weight="700" letter-spacing="1" fill="#f4f3ea">RED ECO</text>
+  <text x="250" y="141" font-family="Archivo, 'Helvetica Neue', Arial, sans-serif"
+        font-size="19.5" letter-spacing="4.2" fill="#b9c6ba">EDUCACIÓN AMBIENTAL</text>
+</svg>
