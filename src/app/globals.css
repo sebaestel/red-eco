@@ -680,7 +680,7 @@ a {
   align-content: start;
   gap: 0.55rem;
   width: 100%;
-  min-height: 10.5rem;
+  min-height: 8.5rem;
   padding: 1.15rem 1.1rem 1.25rem;
   border: 0;
   background-color: var(--papel-alt);
@@ -1115,6 +1115,19 @@ a {
 
 /* ---------- 13. Propósito ---------- */
 
+.proposito__reticula {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(2.5rem, 5vw, 4rem);
+  align-items: center;
+}
+
+@media (min-width: 56rem) {
+  .proposito__reticula {
+    grid-template-columns: 1fr auto;
+  }
+}
+
 .proposito {
   background-color: var(--papel-hueso);
   border-block: 1px solid var(--linea);
@@ -1357,7 +1370,10 @@ a {
   transform: rotate(90deg);
 }
 
-.faq__item[open] .faq__signo::after {
+/* Al abrir, el círculo gira 90°: eso deja la barra vertical en horizontal.
+   Por eso se oculta ::before (la horizontal), no ::after. Ocultar la otra
+   dejaba un "|" en vez de un "−". */
+.faq__item[open] .faq__signo::before {
   opacity: 0;
 }
 
@@ -1658,38 +1674,48 @@ a {
   }
 }
 
-/* ---------- 19. Marca animada ---------- */
+/* ---------- 19. Sello: la marca se dibuja al entrar en pantalla ---------- */
+
+.sello {
+  display: flex;
+  justify-content: center;
+}
+
+.sello__svg {
+  width: clamp(7rem, 13vw, 10.5rem);
+  height: auto;
+}
 
 .marca__flecha-cuerpo,
 .marca__tallo {
   stroke-dasharray: 100;
 }
 
-svg[data-animada="true"] .marca__flecha-cuerpo {
+.sello[data-visible="true"] .marca__flecha-cuerpo {
   stroke-dashoffset: 100;
   animation: trazar 900ms cubic-bezier(0.16, 0.84, 0.44, 1) forwards;
   animation-delay: calc(120ms + var(--indice, 0) * 130ms);
 }
 
-svg[data-animada="true"] .marca__flecha-punta {
+.sello[data-visible="true"] .marca__flecha-punta {
   opacity: 0;
   animation: aparecer-punta 380ms ease-out forwards;
   animation-delay: calc(820ms + var(--indice, 0) * 130ms);
 }
 
-svg[data-animada="true"] .marca__libro {
+.sello[data-visible="true"] .marca__libro {
   opacity: 0;
   animation: subir-libro 620ms cubic-bezier(0.16, 0.84, 0.44, 1) forwards;
   animation-delay: 780ms;
 }
 
-svg[data-animada="true"] .marca__tallo {
+.sello[data-visible="true"] .marca__tallo {
   stroke-dashoffset: 100;
   animation: trazar 720ms cubic-bezier(0.3, 0.75, 0.35, 1) forwards;
   animation-delay: 1000ms;
 }
 
-svg[data-animada="true"] .marca__hoja {
+.sello[data-visible="true"] .marca__hoja {
   opacity: 0;
   transform: scale(0.5);
   transform-origin: 100px 100px;

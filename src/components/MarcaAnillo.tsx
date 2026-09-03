@@ -3,8 +3,10 @@
  * Tres flechas de trazo uniforme (el original tenía doble trazo dibujado a mano,
  * que se ensucia bajo 32 px) + libro y brote fundidos en una sola forma.
  *
- * animada: dibuja el anillo y hace crecer el brote una sola vez al cargar.
- * simple:  quita el libro y una hoja. Es la versión para 16–40 px.
+ * simple: quita el libro y una hoja. Es la versión para 16–40 px.
+ *
+ * La animación de dibujado no vive acá: la dispara el contenedor .sello
+ * cuando entra en pantalla (ver globals.css).
  */
 
 import type { CSSProperties } from "react";
@@ -25,7 +27,6 @@ import {
 
 type Props = {
   className?: string;
-  animada?: boolean;
   simple?: boolean;
   /** Versión de una sola tinta, para fondos oscuros o marcas de agua. */
   mono?: boolean;
@@ -34,7 +35,6 @@ type Props = {
 
 export default function MarcaAnillo({
   className,
-  animada = false,
   simple = false,
   mono = false,
   titulo = "Marca RED ECO",
@@ -51,7 +51,6 @@ export default function MarcaAnillo({
       role={titulo ? "img" : "presentation"}
       aria-label={titulo || undefined}
       aria-hidden={titulo ? undefined : true}
-      data-animada={animada ? "true" : "false"}
       xmlns="http://www.w3.org/2000/svg"
     >
       {/* Anillo: una flecha definida una vez y repetida a 120°. */}
