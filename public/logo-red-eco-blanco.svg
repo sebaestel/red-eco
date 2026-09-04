@@ -1,28 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 200" width="620" height="200">
-  <title>RED ECO — versión de una tinta para fondos oscuros</title>
-  <g fill="#f4f3ea" stroke="#f4f3ea">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 200" width="660" height="200">
+  <title>RED ECO — una tinta, para fondos oscuros</title>
+  <g>
     <g>
-      <path d="M34.75 69.57 A 72 72 0 0 1 125.80 32.78" fill="none" stroke-width="13"/>
-      <path d="M129.75 22.51 L145.31 44.05 L121.86 43.05 Z" stroke="none"/>
+      <path d="M38.42 67.13 A 70 70 0 0 1 121.63 33.42" fill="none" stroke="#f2f6f0" stroke-width="15" stroke-linecap="round"/>
+      <path d="M127.05 21.20 L145.66 46.20 L118.20 41.68 Z" fill="#f2f6f0"/>
     </g>
     <g transform="rotate(120 100 100)">
-      <path d="M34.75 69.57 A 72 72 0 0 1 125.80 32.78" fill="none" stroke-width="13"/>
-      <path d="M129.75 22.51 L145.31 44.05 L121.86 43.05 Z" stroke="none"/>
+      <path d="M38.42 67.13 A 70 70 0 0 1 121.63 33.42" fill="none" stroke="#f2f6f0" stroke-width="15" stroke-linecap="round"/>
+      <path d="M127.05 21.20 L145.66 46.20 L118.20 41.68 Z" fill="#f2f6f0"/>
     </g>
     <g transform="rotate(240 100 100)">
-      <path d="M34.75 69.57 A 72 72 0 0 1 125.80 32.78" fill="none" stroke-width="13"/>
-      <path d="M129.75 22.51 L145.31 44.05 L121.86 43.05 Z" stroke="none"/>
+      <path d="M38.42 67.13 A 70 70 0 0 1 121.63 33.42" fill="none" stroke="#f2f6f0" stroke-width="15" stroke-linecap="round"/>
+      <path d="M127.05 21.20 L145.66 46.20 L118.20 41.68 Z" fill="#f2f6f0"/>
     </g>
-    <path d="M100 116 C88 108, 74 103, 60 101 L60 118 C74 120, 88 124, 100 130 Z" stroke="none"/>
-    <path d="M100 116 C112 108, 126 103, 140 101 L140 118 C126 120, 112 124, 100 130 Z" stroke="none"/>
-    <path d="M100 98 C88 98, 80 90, 79 80 C90 79, 99 87, 100 98 Z" stroke="none"/>
-    <path d="M100 89 C112 89, 120 81, 121 71 C110 70, 101 78, 100 89 Z" stroke="none"/>
-    <path d="M100 74 C94 66, 94 56, 100 49 C106 56, 106 66, 100 74 Z" stroke="none"/>
+    <path d="M100 119 C86 111, 70 106, 54 104 L54 120 C70 122, 86 126, 100 132 Z" fill="#f2f6f0"/>
+    <path d="M100 119 C114 111, 130 106, 146 104 L146 120 C130 122, 114 126, 100 132 Z" fill="#f2f6f0"/>
+    <path d="M97 119 L103 119 L103 132 L97 132 Z" fill="#f2f6f0" opacity="1"/>
+    <path d="M100 120 C100 104, 100 88, 100 56" fill="none" stroke="#f2f6f0" stroke-width="6" stroke-linecap="round"/>
+    <path d="M100 108 C86 108, 76 99, 75 87 C89 86, 98 96, 100 108 Z" fill="#f2f6f0"/>
+    <path d="M100 100 C114 100, 124 91, 125 79 C111 78, 102 88, 100 100 Z" fill="#f2f6f0"/>
+    <path d="M100 86 C89 85, 81 77, 80 66 C91 66, 99 75, 100 86 Z" fill="#f2f6f0"/>
+    <path d="M100 79 C111 78, 119 70, 120 59 C109 59, 101 68, 100 79 Z" fill="#f2f6f0"/>
+    <path d="M100 72 C93 63, 93 51, 100 43 C107 51, 107 63, 100 72 Z" fill="#f2f6f0"/>
   </g>
-  <path d="M100 116 C100 102, 100 88, 100 62" fill="none" stroke="#f4f3ea" stroke-width="5.5" stroke-linecap="round"/>
-  <rect x="212" y="52" width="1.6" height="96" fill="#c1976a"/>
-  <text x="248" y="106" font-family="Literata, Georgia, 'Times New Roman', serif"
-        font-size="76" font-weight="700" letter-spacing="1" fill="#f4f3ea">RED ECO</text>
-  <text x="250" y="141" font-family="Archivo, 'Helvetica Neue', Arial, sans-serif"
-        font-size="19.5" letter-spacing="4.2" fill="#b9c6ba">EDUCACIÓN AMBIENTAL</text>
+
+  <rect x="212" y="46" width="1.6" height="108" fill="#6cb42c"/>
+  <text x="248" y="104" font-family="Literata, Georgia, 'Times New Roman', serif"
+        font-size="74" font-weight="700" letter-spacing="1" fill="#f2f6f0">RED ECO</text>
+  <text x="250" y="134" font-family="Archivo, 'Helvetica Neue', Arial, sans-serif"
+        font-size="16.5" letter-spacing="3.4" fill="#b8dd7e">
+    EDUCACIÓN AMBIENTAL · ECONOMÍA CIRCULAR · ESG
+  </text>
+  <text x="250" y="160" font-family="Archivo, 'Helvetica Neue', Arial, sans-serif"
+        font-size="13" letter-spacing="4.6" fill="#b4c9b6">
+    TRANSFORMAMOS COMUNIDADES
+  </text>
 </svg>

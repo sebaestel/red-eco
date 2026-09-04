@@ -4,7 +4,7 @@
  */
 
 export const hero = {
-  eyebrow: "Educación ambiental · Economía circular · Chile",
+  eyebrow: "Educación ambiental · Economía circular · ESG",
   titulo: ["Los residuos no son basura.", "Son material de aprendizaje."],
   // La bajada describe lo que se ve en la foto: clasificar, registrar, medir.
   bajada:
@@ -69,6 +69,7 @@ export const programa = {
   parrafos: [
     "EcoEscuela es un programa integral de educación ambiental y economía circular que convierte establecimientos educacionales en comunidades comprometidas con el cuidado del medio ambiente.",
     "Combinamos educación, experiencias, reciclaje, compostaje, infraestructura y acompañamiento, para que la sostenibilidad no sea una actividad puntual sino una cultura que permanece en el tiempo.",
+    "A diferencia de una charla o de un punto limpio instalado y entregado, acompañamos al establecimiento durante todo el proceso: formamos brigadas estudiantiles y docentes como líderes ambientales, y entregamos indicadores de residuos valorizados en vez de fotos del día de la actividad.",
   ],
   componentes: [
     {
@@ -104,6 +105,31 @@ export const programa = {
   ],
 };
 
+/**
+ * Punto 8: espacio para el video del concurso.
+ * Mientras `video` sea null la sección muestra un marcador con la proporción
+ * final, así el diseño no se mueve cuando llegue el video.
+ *
+ * Para publicarlo, pegá el ID del video (no la URL completa):
+ *   YouTube  https://www.youtube.com/watch?v=ABC123  →  { plataforma: "youtube", id: "ABC123" }
+ *   Vimeo    https://vimeo.com/123456789             →  { plataforma: "vimeo", id: "123456789" }
+ */
+export const concurso = {
+  eyebrow: "Próximamente",
+  titulo: "Concurso EcoEscuela",
+  bajada:
+    "Estamos preparando un concurso para establecimientos educacionales de todo Chile. Acá vas a poder ver el video con las bases, los premios y cómo postular.",
+  // TODO: reemplazar por los datos reales del concurso.
+  datos: [
+    { rotulo: "Convocatoria", valor: "Por confirmar" },
+    { rotulo: "Dirigido a", valor: "Establecimientos educacionales de Chile" },
+    { rotulo: "Postulación", valor: "Se abrirá desde este sitio" },
+  ],
+  video: null as { plataforma: "youtube" | "vimeo"; id: string } | null,
+  marcador: "El video del concurso se publica acá",
+  cta: { etiqueta: "Quiero que me avisen", href: "#contacto" },
+};
+
 /** El método sí es una secuencia: por eso va numerado. */
 export const metodo = {
   eyebrow: "Metodología",
@@ -134,35 +160,6 @@ export const metodo = {
       nombre: "Medición",
       detalle:
         "Registramos kilos valorizados, participación y avance de hábitos. Entregamos indicadores que permiten demostrar el impacto y decidir el paso siguiente.",
-    },
-  ],
-};
-
-export const diferencia = {
-  eyebrow: "Qué nos hace distintos",
-  titulo: "No hacemos actividades. Acompañamos procesos.",
-  bajada:
-    "La mayoría de las intervenciones ambientales terminan el mismo día que empiezan. Nuestra apuesta es lo contrario.",
-  filas: [
-    {
-      tema: "Alcance",
-      tradicional: "Una charla o una jornada aislada",
-      redeco: "Acompañamiento durante todo el proceso de transformación",
-    },
-    {
-      tema: "Infraestructura",
-      tradicional: "Se instala el punto limpio y se entrega",
-      redeco: "Se instala junto con las rutinas y los responsables que lo mantienen",
-    },
-    {
-      tema: "Personas",
-      tradicional: "Audiencia que escucha",
-      redeco: "Brigadas estudiantiles y docentes formados como líderes ambientales",
-    },
-    {
-      tema: "Resultados",
-      tradicional: "Fotos del día de la actividad",
-      redeco: "Indicadores de residuos valorizados y participación",
     },
   ],
 };

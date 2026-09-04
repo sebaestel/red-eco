@@ -16,16 +16,16 @@ export const sitio = {
     "RED ECO transforma comunidades educativas mediante educación ambiental y economía circular. El Programa EcoEscuela integra formación, reciclaje, compostaje, infraestructura y medición de impacto en establecimientos de Chile.",
   // Datos de contacto: reemplazá por los reales antes de publicar.
   email: "contacto@redeco.cl",
-  telefono: "+56 9 0000 0000",
-  telefonoLink: "+56900000000",
+  telefono: "+56 9 8830 9848",
+  telefonoLink: "+56988309848",
   instagram: "https://www.instagram.com/redeco.cl",
   linkedin: "https://www.linkedin.com/company/redeco",
 } as const;
 
 export const navegacion = [
   { id: "programa", etiqueta: "Programa" },
+  { id: "concurso", etiqueta: "Concurso" },
   { id: "metodo", etiqueta: "Método" },
-  { id: "diferencia", etiqueta: "Diferencia" },
   { id: "empresas", etiqueta: "Empresas" },
   { id: "preguntas", etiqueta: "Preguntas" },
 ] as const;

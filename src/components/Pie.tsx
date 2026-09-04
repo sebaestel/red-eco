@@ -10,7 +10,7 @@ export default function Pie() {
         <div className="pie__superior">
           <div>
             <a className="pie__marca" href="#inicio">
-              <MarcaAnillo className="pie__marca-anillo" simple titulo="" />
+              <MarcaAnillo className="pie__marca-anillo" simple mono titulo="" id="pie" />
               <span className="pie__marca-texto">RED ECO</span>
             </a>
             <p className="pie__lema">La economía circular comienza educando.</p>

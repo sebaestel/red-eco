@@ -71,7 +71,7 @@ export default function Nav() {
       <div className="envoltura">
         <div className="nav__fila">
           <a className="nav__marca" href="#inicio" aria-label="RED ECO, ir al inicio">
-            <MarcaAnillo className="nav__marca-anillo" simple mono titulo="" />
+            <MarcaAnillo className="nav__marca-anillo" simple mono titulo="" id="nav" />
             <span className="nav__marca-texto">
               <span className="nav__marca-red">RED</span>{" "}
               <span className="nav__marca-eco">ECO</span>
@@ -103,11 +103,9 @@ export default function Nav() {
               className="nav__disparador"
               aria-expanded={abierto}
               aria-controls="menu-movil"
+              aria-label={abierto ? "Cerrar menú" : "Abrir menú"}
               onClick={() => setAbierto((valor) => !valor)}
             >
-              <span className="solo-lectores">
-                {abierto ? "Cerrar menú" : "Abrir menú"}
-              </span>
               <span className="nav__disparador-linea" aria-hidden="true" />
               <span className="nav__disparador-linea" aria-hidden="true" />
               <span className="nav__disparador-linea" aria-hidden="true" />

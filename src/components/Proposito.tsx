@@ -29,6 +29,7 @@ export default function Proposito() {
           <Aparece className="sello" base={false}>
             <MarcaAnillo
               className="sello__svg"
+              id="sello"
               titulo="Anillo de economía circular con un libro abierto y un brote creciendo desde sus páginas"
             />
           </Aparece>

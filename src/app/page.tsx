@@ -1,5 +1,5 @@
 import Contacto from "@/components/Contacto";
-import Diferencia from "@/components/Diferencia";
+import Concurso from "@/components/Concurso";
 import Empresas from "@/components/Empresas";
 import Faq from "@/components/Faq";
 import Hero from "@/components/Hero";
@@ -16,10 +16,11 @@ export default function Pagina() {
       <Nav />
       <main>
         <Hero />
-        <MesaClasificacion />
+        {/* EcoEscuela va primero: es el producto estrella. */}
         <Programa />
+        <Concurso />
+        <MesaClasificacion />
         <Metodo />
-        <Diferencia />
         <Proposito />
         <Empresas />
         <Faq />
