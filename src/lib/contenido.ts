@@ -65,7 +65,7 @@ export const materiales = [
 export const programa = {
   eyebrow: "Producto principal",
   titulo: "Programa EcoEscuela",
-  kicker: "Transformamos escuelas. Formamos agentes de cambio.",
+  kicker: "Transformamos escuelas en Ecoescuelas formando agentes de cambio.",
   parrafos: [
     "EcoEscuela es un programa integral de educación ambiental y economía circular que convierte establecimientos educacionales en comunidades comprometidas con el cuidado del medio ambiente.",
     "Combinamos educación, experiencias, reciclaje, compostaje, infraestructura y acompañamiento, para que la sostenibilidad no sea una actividad puntual sino una cultura que permanece en el tiempo.",
